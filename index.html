@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Price Calculator</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container">
+            <a href="#" class="navbar-brand">Price Calculator</a>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6" style="float: left; width: 49%;">
+                            <input type="text" class="form-control" id="productName" placeholder="name">
+                        </div>
+                        <div class="form-group col-md-6" style="float: right; width: 49%;">
+                            <input type="text" class="form-control" id="productPrice" placeholder="price">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm mt-1 addBtn"><i class="fas fa-plus"></i> Add</button>
+                    <button type="submit" class="btn btn-warning btn-sm mt-1 editBtn"><i class="far fa-edit"></i> Save</button>
+                    <button type="submit" class="btn btn-danger btn-sm mt-1 deleteBtn"><i class="fas fa-times"></i>
+                        Delete</button>
+                    <button type="submit" class="btn btn-secondary btn-sm mt-1 cancelBtn"><i class="fas fa-arrow-circle-left"></i>
+                        Cancel</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-3" id="productCard">
+            <table class="table">
+                <tbody id="item-list">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-footer text-right" style="text-align: right;">
+                <p>Total: <strong> TL <span id="price-tl">0</span></strong></p>
+
+                <p style="display:none;">Total: <strong> USD <span id="price-usd">2400</span></strong></p>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
